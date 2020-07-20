@@ -16,16 +16,15 @@ Our model is tested in the following environments:
 ## A quick demo
 1. You can download our pretrained model [Best_MR2.pth](https://pan.baidu.com/s/1SToITGqAHMPrTLqrGiq5YQ) from BaiDuNetDisk. The extraction code is "PRDN".
 2. Put the downloaded pretrained model in the './model' folder.
-3. Run 'python inference.py' to realize a quick demo.
+3. Run ```python inference.py``` to realize a quick demo.
 
 ## Training
 1. CHAOS dataset can be downloaded from from its official [website](https://chaos.grand-challenge.org/).
 2. The processing of the original dataset can be referred to "[prepare your data](https://github.com/sinAshish/Multi-Scale-Attention)".
 3. Once you've divided the training set, the validation set and the test set. You should place the groundtruth of the validation set and its corresponding DCM format images in the corresponding folder. 
 4. We have placed our divided groundtruth and its corresponding DCM format images under the "Data_3D" folder. You can replace the contents with yours.
-5. Run 'python train.py'.
+5. Run ```python train.py```
 
 ## Testing
 1. Prepare test set as mentioned in [Training](#Training).
-2. Run ```python
-python test.py``` .
+2. Run ```python test.py``` 
