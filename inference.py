@@ -39,7 +39,7 @@ pic = pic.unsqueeze(0)
 print("pic shape:{}".format(pic.shape))
 # net = FPN([2, 4, 23, 3], 5)
 net = resnet101(pretrained=False)
-pthfile = r'/media/ubuntu/GHDISK/服务器备份/semantic/SavedResults/CHAOS/ours/Final-MR2/Best_FPN-DA.pth'
+pthfile = r'./model/Best_MR2.pth'
 net.load_state_dict(torch.load(pthfile))
 net = net.eval()
 softMax = nn.Softmax()
