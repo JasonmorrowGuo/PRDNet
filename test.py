@@ -59,7 +59,7 @@ def CRF_val(args):
     img_names_ALL = []
     val_path = "./test/{}".format(args.dataset)
     ground_dir = "./Data_3D/TESTGROUND/{}".format(args.dataset)
-    dicom_dir = "./Data_3D/DICOM_test/MR2".format(args.dataset)
+    dicom_dir = "./Data_3D/DICOM_test/{}".format(args.dataset)
     if not os.path.exists(val_path):
         os.makedirs(val_path)
     softMax = nn.Softmax().cuda()
