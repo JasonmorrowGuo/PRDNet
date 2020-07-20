@@ -13,8 +13,8 @@ from visdom import Visdom
 from data.utils import decode_seg_map_sequence
 from torchvision.utils import save_image
 from torchvision import transforms
-from thop import profile, clever_format
-from ptflops import get_model_complexity_info
+# from thop import profile, clever_format
+# from ptflops import get_model_complexity_info
 
 vis = Visdom()
 
@@ -48,21 +48,23 @@ if torch.cuda.is_available():
     softMax.cuda()
 out = net(pic)
 
-#计算参数量1
+#calculating parameters and flops 1
 # flops, params = profile(net, inputs=(pic, ))
 # flops, params = clever_format([flops, params], "%.3f")
 # print(flops,params)
 
-#计算参数量2
-macs, params = get_model_complexity_info(net, (1, 256, 256), as_strings=True, print_per_layer_stat=True, verbose=True)
-print('{:<30}  {:<8}'.format('Computational complexity: ', macs))
-print('{:<30}  {:<8}'.format('Number of parameters: ', params))
+#calculating parameters and flops 2
+# macs, params = get_model_complexity_info(net, (1, 256, 256), as_strings=True, print_per_layer_stat=True, verbose=True)
+# print('{:<30}  {:<8}'.format('Computational complexity: ', macs))
+# print('{:<30}  {:<8}'.format('Number of parameters: ', params))
 
+#visualization
 plotout = torch.argmax(out, dim=1, keepdim=True)
 plotout = plotout.squeeze()
 # vis.surf(plotout.detach().cpu(), win='surfmap', opts=dict(title='surfmap'))
+vis.heatmap(plotout.detach().cpu() , win="heatmap",opts=dict(title="heatmap"))
 
-_, c, _, _ = out.size()
+# _, c, _, _ = out.size()
 #heatmap
 # for i in range (c):
 #     print('i = ', i)
@@ -70,7 +72,7 @@ _, c, _, _ = out.size()
 #     plotout = plotout[i]
 #     print("plotout:{}".format(plotout.shape))
 #     vis.heatmap(plotout.detach().cpu(),win="heatmap{}".format(i),opts=dict(title="heatmap{}".format(i)))
-vis.heatmap(plotout.detach().cpu() , win="heatmap",opts=dict(title="heatmap"))
+
 
 out = out.data.cpu().numpy()
 out = np.argmax(out,axis=1)
