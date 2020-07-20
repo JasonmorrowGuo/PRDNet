@@ -14,7 +14,7 @@ Our model is tested in the following environments:
 
 
 ## A quick demo
-1. You can download our pretrained model [Best_MR2.pth](https://pan.baidu.com/s/1SToITGqAHMPrTLqrGiq5YQ) from BaiDuNetDisk. The extraction code is "PRDN".
+1. You can download our pretrained model [Best_MR2.pth](https://pan.baidu.com/s/1SToITGqAHMPrTLqrGiq5YQ) from BaiDuNetDisk. The extraction code is ```PRDN```.
 2. Put the downloaded pretrained model in the ```./model``` folder.
 3. Run ```python inference.py``` to realize a quick demo.
 
