@@ -6,15 +6,15 @@ from progressBar import printProgressBar
 import medicalDataLoader
 
 from utils import *
-from visdom import Visdom
+# from visdom import Visdom
 
 import argparse
 from prdnet import resnet50,resnet101,resnet18,resnet34,resnet152
 # from unet import Unet
 from optimizer import Adam
-from visdom import Visdom
+# from visdom import Visdom
 
-viz = Visdom()
+# viz = Visdom()
 
 def weights_init(m):
     if type(m) == nn.Conv2d or type(m) == nn.ConvTranspose2d:
