@@ -4,8 +4,6 @@ from progressBar import printProgressBar
 
 
 import medicalDataLoader
-import crf
-from crf import NonRGBCRF
 
 from utils import *
 from visdom import Visdom
