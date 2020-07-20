@@ -72,13 +72,13 @@ def getTargetSegmentation(batch):
 
 
 
-def inference(net, img_batch):
+def inference(net, img_batch, dataset):
     total = len(img_batch)
     net.eval()
     img_names_ALL = []
-    val_path = './validation/MR1'
-    ground_dir = './Data_3D/VALGROUND/MR1'
-    dicom_dir = './Data_3D/DICOM_val/MR1'
+    val_path = './validation/{}'.format(dataset)
+    ground_dir = './Data_3D/VALGROUND/{}'.format(dataset)
+    dicom_dir = './Data_3D/DICOM_val/{}'.format(dataset)
     if not os.path.exists(val_path):
         os.makedirs(val_path)
     softMax = nn.Softmax().cuda()
