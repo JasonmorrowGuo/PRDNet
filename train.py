@@ -142,7 +142,7 @@ def runTraining(args):
 
         if i > 4:
 
-            dice, ravd, assd, mssd = inference(net, val_loader)
+            dice, ravd, assd, mssd = inference(net, val_loader, args.dataset)
 
             currentDice = dice
             #viz.line([currentDice], [i], win='currentDice-cbam', update='append')
