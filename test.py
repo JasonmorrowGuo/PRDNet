@@ -48,7 +48,7 @@ def CRF_val(args):
                                         shuffle=False)
     net = resnet101()
     # net = DAF_stack()
-    pthfile = r'/media/hotchieh/GHDISK/服务器备份/semantic/租服务器数据/savedresults2/FINALNEW/PRDNet/MR2/Best_MR2.pth'
+    pthfile = r'./model/Best_MR2.pth'
     net.load_state_dict(torch.load(pthfile))
     total = len(test_loader_save_images)
     net.eval()
