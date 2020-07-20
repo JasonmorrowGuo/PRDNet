@@ -140,15 +140,16 @@ def runTraining(args):
 
         Losses.append(np.mean(lossVal))
 
-        if i > 4:
+        #prevent validation error
+        if i > 0:
 
             dice, ravd, assd, mssd = inference(net, val_loader, args.dataset)
 
             currentDice = dice
             #viz.line([currentDice], [i], win='currentDice-cbam', update='append')
-            viz.line([dice], [i-4], win="DICE {}".format(dataset), update='append')
-            viz.line([assd], [i-4], win="ASSD {}".format(dataset), update='append')
-            viz.line([[ravd, mssd]], [i-4], win="RAVD and MSSD {}".format(dataset), update='append')
+            viz.line([dice], [i], win="DICE {}".format(dataset), update='append')
+            viz.line([assd], [i], win="ASSD {}".format(dataset), update='append')
+            viz.line([[ravd, mssd]], [i], win="RAVD and MSSD {}".format(dataset), update='append')
             print("[val] metrics: (1): {:.4f} (2): {:.4f}  (3): {:.4f} (4): {:.4f}".format(dice,ravd,assd,mssd)) # MRI
 
             if currentDice > BestDice:
