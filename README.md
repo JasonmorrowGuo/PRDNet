@@ -5,7 +5,7 @@ PRDNet: Medical image segmentation based on parallel residual and dilated networ
 The code is borrowed from [Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention), our contributions are ```prdnet.py```, ```test.py``` and ```inference.py```
 
 ## Environment
-Our model is tested in the following environments:   
+Our model is tested in the following environment:   
   * python3.5(anaconda3)
   * pytoch1.2.0
   * torchvision0.4.0
