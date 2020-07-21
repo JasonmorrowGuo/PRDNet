@@ -26,5 +26,5 @@ Our model is tested in the following environments:
 5. Run ```python train.py```
 
 ## Testing
-1. Prepare test set as mentioned in [Training](#Training).
+1. Preparing test set as mentioned in [Training](#Training).
 2. Run ```python test.py``` 
