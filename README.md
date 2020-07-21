@@ -19,7 +19,7 @@ Our model is tested in the following environments:
 3. Run ```python inference.py``` to realize a quick demo.
 
 ## Training
-1. CHAOS dataset can be downloaded from from its official [website](https://chaos.grand-challenge.org/).
+1. CHAOS dataset can be downloaded from its official [website](https://chaos.grand-challenge.org/).
 2. The processing of the original dataset can be referred to "[prepare your data](https://github.com/sinAshish/Multi-Scale-Attention)".
 3. Once you've divided the training set, the validation set and the test set. You should place the groundtruth of the validation set and its corresponding DCM format images in the corresponding folder. 
 4. We have placed our divided groundtruth and its corresponding DCM format images under the "Data_3D" folder. You can replace the contents with yours.
