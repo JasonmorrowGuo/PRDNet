@@ -11,6 +11,7 @@ Our model is tested in the following environment:
   * torchvision0.4.0
   * CUDA10.0
   * GPU:1080Ti(11G)
+  * Visdom
 
 
 ## A quick demo
