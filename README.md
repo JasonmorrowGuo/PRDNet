@@ -10,7 +10,7 @@ Our model is tested in the following environment:
   * pytoch1.2.0
   * torchvision0.4.0
   * CUDA10.0
-  * GPU:Nvidia 1080Ti(11G)
+  * GPU: Nvidia 1080Ti(11G)
   * Visdom
 
 
