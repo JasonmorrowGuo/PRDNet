@@ -6,7 +6,7 @@ This code is borrowed from [Multi-Scale-Attention](https://github.com/sinAshish/
 
 ## Inference Results
 #### Input & Inference & Groundtruth Images
-![original img](https://github.com/JasonmorrowGuo/PRDNet/blob/master/subj_2slice_12.png) ![inference_result](/readme/subj_2slice_12.png) [groundtruth](/readme/groundtruth.png)
+![original img](https://github.com/JasonmorrowGuo/PRDNet/blob/master/subj_2slice_12.png) ![inference_result](/readme/subj_2slice_12.png) ![groundtruth](/readme/groundtruth.png)
 
 ## Environment
 Our model is tested in the following environment:   
