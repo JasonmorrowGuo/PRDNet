@@ -2,7 +2,7 @@
 PRDNet: Medical image segmentation based on parallel residual and dilated network
 
 ## Statement
-This code is borrowed from [Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention), our contributions are ```prdnet.py```, ```test.py``` and ```inference.py```. Meanwhile, Visdom is used to visualize the training process.
+The code of '''train.py''' is borrowed from [Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention), our contributions are ```prdnet.py```, ```test.py``` and ```inference.py```. Meanwhile, Visdom is used to visualize the training process.
 
 ## Input & Inference & Groundtruth Images
 ![original img](https://github.com/JasonmorrowGuo/PRDNet/blob/master/subj_2slice_12.png) ![inference_result](/readme/subj_2slice_12.png) ![groundtruth](/readme/groundtruth.png)
