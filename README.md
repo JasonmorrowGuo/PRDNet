@@ -34,7 +34,7 @@ Our model is tested in the following environment:
 2. Run ```python test.py``` 
 
 ## Citing
-if the idea of our work is useful for your research, please consider citing.
+If the idea of our work is useful for your research, please consider citing.
 ```BibTex
 @article{PRDNet,
 title   = "{PRDN}et: {M}edical image segmentation based on parallel residual and dilated network",
