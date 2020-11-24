@@ -39,7 +39,6 @@ If the idea of our work is useful for your research, please consider citing.
 @article{PRDNet,
 title   = "{PRDN}et: {M}edical image segmentation based on parallel residual and dilated network",
 journal = "Measurement",
-pages   = "108661",
 year    = "2020",
 issn    = "0263-2241",
 doi     = "https://doi.org/10.1016/j.measurement.2020.108661",
