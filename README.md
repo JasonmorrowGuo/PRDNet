@@ -35,16 +35,16 @@ Our model is tested in the following environment:
 
 ## Citing
 if the idea of our work is useful for your research, please consider citing.
-```
-@article{GUO2020108661,
-title = "PRDNet: Medical image segmentation based on parallel residual and dilated network",
+```BibTex
+@article{PRDNet,
+title   = "{PRDN}et: {M}edical image segmentation based on parallel residual and dilated network",
 journal = "Measurement",
-pages = "108661",
-year = "2020",
-issn = "0263-2241",
-doi = "https://doi.org/10.1016/j.measurement.2020.108661",
-url = "http://www.sciencedirect.com/science/article/pii/S0263224120311738",
-author = "Haojie Guo and Dedong Yang",
+pages   = "108661",
+year    = "2020",
+issn    = "0263-2241",
+doi     = "https://doi.org/10.1016/j.measurement.2020.108661",
+url     = "http://www.sciencedirect.com/science/article/pii/S0263224120311738",
+author  = "Haojie Guo and Dedong Yang",
 }
 ```
 
