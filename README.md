@@ -1,5 +1,5 @@
 # PRDNet
-PRDNet: Medical image segmentation based on parallel residual and dilated network. [DOI:10.1016/j.measurement.2020.108661](https://doi.org/10.1016/j.measurement.2020.108661)
+PRDNet: Medical image segmentation based on parallel residual and dilated network. [论文链接](https://doi.org/10.1016/j.measurement.2020.108661)
 [](/readme/overrallfinal.png)
 
 ## Statement
